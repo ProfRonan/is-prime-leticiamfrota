@@ -8,3 +8,5 @@ elif numero == 1:
     print('Não Primo')
 elif numero == 2:
     print('Primo')
+elif numero <= 0:
+     print('Número inválido')

@@ -1,12 +1,14 @@
-numero = int(input())
-if numero > 2:
-    if numero % 2 == 0:
-        print('Não primo')
-    if numero % 2 != 0:
-        print('Primo')
-elif numero == 1:
-    print('Não Primo')
-elif numero == 2:
+n = int(input())
+if n <= 0:
+    print('Número inválido')
+if n == 1:
+    print('Não primo')
+if n == 2:
     print('Primo')
-elif numero <= 0:
-     print('Número inválido')
+if n > 2:
+    for i in range (2,n):
+        if n % i == 0:
+            print('Não primo')
+            break
+    else:
+        print('Primo')
